@@ -4,12 +4,13 @@
 /* more headers goes there */
 
 /*betty style doc for function goes there */
- /**
- * main - prints the last digit of a randomly generated number
- *and whether it is greater than 5, less than 6 or 0
- *
- * Return: Always 0 (success)
- */
+/**
+  * main - prints the last digit of a randomly generated number
+  *and whether it is greater than 5, less than 6 or 0
+  *
+  * Return: Always 0 (success)
+  */
+
 int main(void)
 {
 	int n;
@@ -19,10 +20,16 @@ int main(void)
 	/* your code goes there */
 
 	if ((n % 10) > 5)
+	{
 		printf("last digit of %d is %d and is greater than 5\n", n, n);
+	}
 	if (n == 0)
+	{
 		printf("last digit of %d is %d and is 0\n", n, n);
+	}
 	if (n < 6 && n != 0)
+	{
 		printf("last digit of %d is %d is less than 6 and not 0\n", n, n);
+	}
 	return (0);
 }
