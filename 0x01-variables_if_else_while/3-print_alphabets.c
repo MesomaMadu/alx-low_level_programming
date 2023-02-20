@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * main - prints the alphabet
- *
- * Return : Always 0 (success)
- */
+  * main - Entry point
+  *
+  * Return: Always 0 (success)
+  */
+
 int main(void)
 {
 	char c;
@@ -13,12 +14,14 @@ int main(void)
 	c = 'a';
 	d = 'A';
 	while
-		(c <= 'z'){
+		(c <= 'z')
+	{
 		putchar(c);
 		c++;
 	}
 	while
-		(d <= 'Z'){
+		(d <= 'Z')
+	{
 		putchar(c);
 		d++;
 	}
