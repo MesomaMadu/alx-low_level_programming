@@ -6,12 +6,12 @@
  */
 
 int main(void)
-
-	int c;
+{
+	char c;
 
 	int d;
 
-	c = 'a'
+	c = 'a';
 	d = 0;
 	while
 		(d < 10)
