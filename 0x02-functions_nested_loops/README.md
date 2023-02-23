@@ -1,0 +1,1 @@
+this program is about bested loops and how to use thm. we are going to learn and master them. using ubuntu 20.04 under the ALX software engineering program. and typing using the betty documentation style.
