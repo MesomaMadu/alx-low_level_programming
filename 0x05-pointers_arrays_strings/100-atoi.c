@@ -16,7 +16,7 @@ int _atoi(char *s)
 
 	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
 	{
-		if (s[i] == '_')
+		if (s[i] == '-')
 		signo *= -1;
 	i++;
 	}
