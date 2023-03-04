@@ -1,5 +1,5 @@
-#ifndef MAIN.H
-#define MAIN.H
+#include "main.h"
+#include <unistd.h>
 
 /**
  * _putchar - writes the character to stdout
