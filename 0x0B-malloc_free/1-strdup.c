@@ -14,7 +14,7 @@ char *_strdup(char *str)
 		return (NULL);
 	/*determining the length size*/
 	for (size = 0; str[size] != '\0'; size++)
-		ptr = (char *) malloc(((size + 1) * sizeof(char)));
+		ptr = (char *) malloc((size + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 	/*Copying the content of @str into new array*/
