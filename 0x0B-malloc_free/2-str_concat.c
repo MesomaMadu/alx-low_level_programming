@@ -11,6 +11,7 @@ int get_str_len(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 		return (i + 1);
+	return ('\0');
 }
 /**
  * str_concat - joins two strings
@@ -20,7 +21,7 @@ int get_str_len(char *str)
  * if NULL is passed, treat it as empty string
  * the function should return NULL on failure
  */
-char *str_concat(char *s1, char s2)
+char *str_concat(char *s1, char *s2)
 {
 	int s1_size, s2_size, i, j;
 	char *ptr;
@@ -32,7 +33,7 @@ char *str_concat(char *s1, char s2)
 	s1_size = get_str_len(s1);
 	s2_size = get_str_len(s2);
 
-	ptr = (char *) malloc((s1_size + s2_size) - 1) * sizeof(char);
+	ptr = (char *) malloc(((s1_size + s2_size) - 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
@@ -42,4 +43,4 @@ char *str_concat(char *s1, char s2)
 
 	ptr[i] = ('\0');
 	return (ptr);
-
+}
