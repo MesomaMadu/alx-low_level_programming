@@ -10,6 +10,8 @@ int get_str_len(char *str)
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
+		;
+
 		return (i + 1);
 	return ('\0');
 }
@@ -27,9 +29,9 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 
 	if (s1 == NULL)
-		return ("");
+		s1 = ("");
 	if (s2 == NULL)
-		return ("");
+		s2 = ("");
 	s1_size = get_str_len(s1);
 	s2_size = get_str_len(s2);
 
