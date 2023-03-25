@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 	i = 0;
-	
+
 	if (format)
 	{
 		while (format[i])
@@ -35,19 +35,17 @@ void print_all(const char * const format, ...)
 				str = va_arg(list, char *);
 			if (str == NULL)
 				str = "(nil)";
-			printf("%s%s", sep, str);
-			break;
-			
+				printf("%s%s", sep, str);
+				break;
 				default:
-
 				i++;
 				continue;
 			}
-		sep = ", ";
-		i++;
+			sep = ", ";
+			i++;
 		}
+	}
+
 	printf("\n");
 	va_end(list);
-	}
 }
-
