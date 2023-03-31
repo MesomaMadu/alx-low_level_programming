@@ -10,6 +10,6 @@ void first(void)
 {
 	printf("youre beat! and yet, you must allow, \n");
 
-	printf("i bore my house upon my back!\n");
+	printf("I bore my house upon my back!\n");
 
 }
